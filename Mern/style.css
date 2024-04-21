@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    Box-sizing: Border-box;
+}
+header{
+ font-family: Arial, Helvetica, sans-serif;
+ border:0px solid black;
+ width: 100%
+ 
+ 
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 60px;
+    color: blue;
+    top: 20;
+}
+header nav :hover {
+    color: black;
+}
+header nav ul{
+   list-style: none;
+   display: flex;
+   width:300px;
+   justify-content: space-around;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#banner{
+    background-image: url('./assest/main.jpg');
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+#banner h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+#h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#banner button{
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: aqua;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#destination{
+    margin:30px 60px;
+    padding:0 100px;   
+}
+#destination h2{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+#destination p{
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#destination-grid{
+    display: flex;
+    flex-wrap: wrap;    
+}
+#destination-grid div{
+    height: 350px;
+    padding: 1rem;
+    margin-left: 50px;
+    padding-left: 50px;
+  
+}
+#destination-grid div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;    
+}
+#destination-grid.small{
+    flex-basis: 30%;
+}
+#destination-grid.large{
+    flex-basis: 70%;
+}
+@media screen and (width<=90px){
+    #destination-grid.small{flex-basis: 50%;}
+    #destination-grid.large{flex-basis: 100%;}
+}
+#tour-package{
+    margin: 30px 40px;
+    padding: 30px;
+
+}
+#tour-package h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+#tour-package p{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+.tour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tour h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tour p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tour img{
+    max-width: 50px;
+    max-height: 30px;
+    border-radius: 25px;
+}
+.testimonial{
+    margin: 40px 40px;
+    text-align: center;
+    background-color: grey;
+    
+}
+.testimonial p{
+    padding: 10px;
+    margin-top: 10px;
+}
+.learn-more{
+    margin: 30px;
+    text-align: center;
+    background-color: grey;
+}
+.learn-more h2{
+    text-align: center;
+}
+.learn-more p{
+    padding: 10px;
+}
+.learn-more button{
+    padding: 10px;
+    margin: 10px;
+}
+.grid-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
